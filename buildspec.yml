@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  #pre_build:
+  #  commands:
+  #  - echo Running unit tests
+  #  - ./mvnw spring-boot:test
+  build:
+    commands:
+    - echo Build started on `date`
+    - ./mvnw -B package
+  post_build:
+    commands:
+    - echo Build completed on `date`
+artifacts:
+  files:
+  - target/*.jar
