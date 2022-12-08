@@ -16,4 +16,5 @@ phases:
     - echo Build completed on `date`
 artifacts:
   files:
-  - target/*.jar
+  - target/spring-petclinic-2.7.3.jar
+  name: spring-petclinic_$CODEBUILD_BUILD_NUMBER-$(date +%Y-%m-%d)
