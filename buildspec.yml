@@ -16,7 +16,7 @@ phases:
     - echo Build completed on `date`
 artifacts:
   files:
-  - target/spring-petclinic-*.jar
+  - spring-petclinic-*.jar
   base-directory: 'target'
   name: spring-petclinic_$CODEBUILD_BUILD_NUMBER-$(date +%Y-%m-%d)
   discard-paths: yes
